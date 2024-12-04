@@ -1,1 +1,36 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+}
 
+@keyframes growShrink {
+    0%, 100% {
+      transform: scale(1); /* Normal size */
+    }
+    50% {
+      transform: scale(1.2); /* Grow 20% larger */
+    }
+  }
+
+.exhala {
+    background-color: #3b966d;
+    color: white;
+    
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+
+    animation: growShrink 7s ease-in-out 3; 
+}
+
+.pronto {
+    margin-top: 7rem;
+}
